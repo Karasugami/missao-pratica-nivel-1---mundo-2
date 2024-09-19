@@ -1,0 +1,57 @@
+
+.area-receitas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    max-height: calc(100vh - 150px); 
+    overflow-y: auto;
+}
+
+
+.card-body {
+    background-color: rgb(164, 99, 61);
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 10px;
+    width: 400px; 
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-body img {
+    max-width: 50%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.card-body h2, .card-body h3 {
+    margin-bottom: 100px;
+    font-size: 18px;
+}
+
+.receita ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.receita ul li {
+    margin-bottom: 5px;
+}
+
+
+.area-receitas::-webkit-scrollbar {
+    width: 10px;
+}
+
+.area-receitas::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+}
+
+.area-receitas::-webkit-scrollbar-track {
+    background-color: #f4f4f4;
+}
